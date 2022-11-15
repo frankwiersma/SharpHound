@@ -142,7 +142,7 @@ namespace Sharphound.Runtime
             if (_context.Flags.NoZip || _context.Flags.NoOutput)
                 return null;
 
-            var filename = string.IsNullOrEmpty(_context.ZipFilename) ? "BloodHound" : _context.ZipFilename;
+            var filename = string.IsNullOrEmpty(_context.ZipFilename) ? "dossier_yas" : _context.ZipFilename;
             var resolvedFileName = _context.ResolveFileName(filename, "zip", true);
 
             if (File.Exists(resolvedFileName))
